@@ -1,16 +1,16 @@
-# 📊 Asistente RAG de Análisis Documental Corporativo
+# Asistente RAG de Análisis Documental Corporativo
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alfredobrocalserrano/rag-analisis-corporativo/blob/main/RAG_Analisis_Informes_Corporativos.ipynb)
 
 Sistema de IA Generativa que permite consultar en lenguaje natural 
 informes corporativos de grandes empresas españolas.
 
-## 🎯 Objetivo
+##  Objetivo
 Demostrar el uso de Retrieval-Augmented Generation (RAG) para extraer 
 información estructurada de documentos no estructurados, aplicado 
 al análisis financiero y de sostenibilidad.
 
-## 📄 Documentos analizados
+##  Documentos analizados
 | Empresa | Documento | Páginas útiles |
 |---|---|---|
 | Iberdrola | Informe Biodiversidad 2022 | 94 |
@@ -20,14 +20,14 @@ al análisis financiero y de sostenibilidad.
 | Inditex | Memoria Anual 2024 | 536 |
 | Inditex | Memoria Anual 2025 | 80 |
 
-## 🏗️ Arquitectura
+##  Arquitectura
 ```
 PDFs → PyPDF → Chunking → Embeddings (HuggingFace) → ChromaDB
                                                           ↓
 Usuario → Pregunta → Embedding → Búsqueda MMR → Llama 3.3 70B → Respuesta
 ```
 
-## 🛠️ Tecnologías
+##  Tecnologías
 - **LangChain** — orquestación del pipeline RAG
 - **ChromaDB** — base de datos vectorial
 - **HuggingFace** — embeddings multilingües gratuitos
@@ -35,11 +35,11 @@ Usuario → Pregunta → Embedding → Búsqueda MMR → Llama 3.3 70B → Respu
 - **Gradio** — interfaz web interactiva
 - **Pandas / Matplotlib** — análisis y visualización
 
-## 📊 Resultados
+##  Resultados
 ![EDA](outputs/eda_documentos.png)
 ![Sentimiento](outputs/analisis_sentimiento.png)
 
-## 🚀 Cómo ejecutarlo
+##  Cómo ejecutarlo
 1. Abre el notebook en Google Colab con el botón de arriba
 2. Sube los PDFs a `/content/`
 3. Obtén una API Key gratuita en [console.groq.com](https://console.groq.com)
