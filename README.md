@@ -39,12 +39,6 @@ Usuario → Pregunta → Embedding → Búsqueda MMR → Llama 3.3 70B → Respu
 ![EDA](outputs/eda_documentos.png)
 ![Sentimiento](outputs/analisis_sentimiento.png)
 
-##  Cómo ejecutarlo
-1. Abre el notebook en Google Colab con el botón de arriba
-2. Sube los PDFs a `/content/`
-3. Obtén una API Key gratuita en [console.groq.com](https://console.groq.com)
-4. Ejecuta las celdas en orden
-
 ## 📁 Estructura del proyecto
 ```
 rag-analisis-corporativo/
